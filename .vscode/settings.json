@@ -3,21 +3,21 @@
         "editor.rulers": [
             100
         ],
-        "editor.wordWrap": "on",
+        "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 100
     },
     "[html]": {
         "editor.rulers": [
             100
         ],
-        "editor.wordWrap": "on",
+        "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 100
     },
     "[javascript]": {
         "editor.rulers": [
             100
         ],
-        "editor.wordWrap": "on",
+        "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 100
     },
     "editor.detectIndentation": false,
