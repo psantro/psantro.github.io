@@ -1,27 +1,35 @@
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>psantro &middot; Redirecting...</title>
-  <meta name="description" content="Redirecting based on language preference" />
+    <title>psantro &middot; Redirecting...</title>
+    <meta
+      name="description"
+      content="Redirects based on browser' language preference"
+    />
 
-  <script>
-    (function () {
-      const lang = (navigator.language || navigator.userLanguage).substring(
-        0,
-        2,
-      );
-      let target;
-      switch (lang) {
-        case "es":
-          target = "/es/sobre-mi.html";
-          break;
-        case "en":
-        default:
-          target = "/en/about.html";
-          break;
-      }
-      window.location.replace(target);
-    })();
-  </script>
-</head>
+    <script>
+      (function () {
+        const lang = (navigator.language || navigator.userLanguage).substring(
+          0,
+          2,
+        );
+        let target;
+        switch (lang) {
+          case "es":
+            target = "/es/sobre-mi.html";
+            break;
+          case "en":
+          default:
+            target = "/en/about.html";
+            break;
+        }
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+
+  <body></body>
+</html>
