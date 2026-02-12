@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "astro": "^5.17.1",
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.3"
   },
   "devDependencies": {
     "prettier": "3.8.1",
