@@ -1,6 +1,6 @@
 ---
 import Hero from "@/components/common/Hero.astro";
-import Navigation from "@/components/common/SiteNavigation.astro";
+import SiteNavigation from "@/components/common/SiteNavigation.astro";
 import TableOfContents from "@/components/common/TableOfContents.astro";
 
 const { t } = Astro.props;
@@ -10,20 +10,27 @@ const { t } = Astro.props;
 <html lang={t.lang}>
   <head>
     <meta charset="UTF-8" />
-    <title>{t.pageTitle} · {t.name}</title>
+    <title>{t.currentPageTitle} · {t.pabSanTronLabel}</title>
   </head>
 
   <body>
     <header>
-      <Hero text={t.name} />
-      <Navigation projects={t.projects} about={t.about} />
+      <Hero text={t.pabSanTronLabel} />
+      <SiteNavigation
+        siteNavigation={t.siteNavigationLabel}
+        projects={t.projectsPageTitle}
+        about={t.aboutPageTitle}
+      />
     </header>
     <main>
-      <header><h1>{t.pageTitle}</h1></header>
-      <slot id="main-content" />
+      <header><h1>{t.currentPageTitle}</h1></header>
+      <slot />
     </main>
     <aside>
-      <TableOfContents toc={t.toc} otp={t.otp} />
+      <TableOfContents
+        tableOfContents={t.tableOfContentsLabel}
+        onThisPage={t.onThisPageLabel}
+      />
     </aside>
   </body>
 </html>
