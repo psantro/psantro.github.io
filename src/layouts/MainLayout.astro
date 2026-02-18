@@ -1,0 +1,29 @@
+---
+import Hero from "@/components/common/Hero.astro";
+import Navigation from "@/components/common/SiteNavigation.astro";
+import TableOfContents from "@/components/common/TableOfContents.astro";
+
+const { t } = Astro.props;
+---
+
+<!doctype html>
+<html lang={t.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{t.pageTitle} · {t.name}</title>
+  </head>
+
+  <body>
+    <header>
+      <Hero text={t.name} />
+      <Navigation projects={t.projects} about={t.about} />
+    </header>
+    <main>
+      <header><h1>{t.pageTitle}</h1></header>
+      <slot id="main-content" />
+    </main>
+    <aside>
+      <TableOfContents toc={t.toc} otp={t.otp} />
+    </aside>
+  </body>
+</html>
