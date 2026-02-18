@@ -1,5 +1,6 @@
 ---
 import Hero from "@/components/common/Hero.astro";
+import Socials from "@/components/common/Socials.astro";
 import SiteNavigation from "@/components/common/SiteNavigation.astro";
 import TableOfContents from "@/components/common/TableOfContents.astro";
 
@@ -16,6 +17,12 @@ const { t } = Astro.props;
   <body>
     <header>
       <Hero text={t.pabSanTronLabel} />
+      <Socials
+        github={t.github}
+        linkedIn={t.linkedIn}
+        emailMe={t.emailMe}
+        downloadResume={t.downloadResume}
+      />
       <SiteNavigation
         siteNavigation={t.siteNavigationLabel}
         projects={t.projectsPageTitle}

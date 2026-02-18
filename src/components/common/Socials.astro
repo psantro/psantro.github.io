@@ -1,0 +1,10 @@
+---
+const { github, linkedIn, emailMe, downloadResume } = Astro.props;
+---
+
+<nav>
+  <a href={github.url}>{github.message}</a>
+  <a href={linkedIn.url}>{linkedIn.message}</a>
+  <a href={emailMe.url}>{emailMe.message}</a>
+  <a href={downloadResume.url}>{downloadResume.message}</a>
+</nav>
