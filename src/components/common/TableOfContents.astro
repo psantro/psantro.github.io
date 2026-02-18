@@ -1,9 +1,9 @@
 ---
-const { tableOfContents, onThisPage } = Astro.props;
+const { t } = Astro.props;
 ---
 
 <header>
-  <h2>{tableOfContents}</h2>
-  <p>{onThisPage}</p>
+  <h2>{t.tableOfContents.title}</h2>
+  <p>{t.tableOfContents.onThisPage}</p>
 </header>
 <nav id="table-of-contents"></nav>

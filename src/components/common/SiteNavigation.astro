@@ -1,9 +1,13 @@
 ---
-const { siteNavigation, projects, about } = Astro.props;
+const { t } = Astro.props;
 ---
 
 <nav id="site-navigation">
-  <h2>{siteNavigation}</h2>
-  <a href="/projects">{projects}</a>
-  <a href="/about">{about}</a>
+  <h2>{t.siteNavigation.title}</h2>
+  <a href={t.siteNavigation.projectsPage.url}>
+    {t.siteNavigation.projectsPage.title}
+  </a>
+  <a href={t.siteNavigation.aboutPage.url}>
+    {t.siteNavigation.aboutPage.title}
+  </a>
 </nav>

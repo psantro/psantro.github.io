@@ -8,7 +8,7 @@ const { t } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={t.lang}>
+<html lang={t.languageCode}>
   <head>
     <meta charset="UTF-8" />
     <title>{t.currentPageTitle} · {t.pabSanTronLabel}</title>
@@ -16,28 +16,16 @@ const { t } = Astro.props;
 
   <body>
     <header>
-      <Hero text={t.pabSanTronLabel} />
-      <Socials
-        github={t.github}
-        linkedIn={t.linkedIn}
-        emailMe={t.emailMe}
-        downloadResume={t.downloadResume}
-      />
-      <SiteNavigation
-        siteNavigation={t.siteNavigationLabel}
-        projects={t.projectsPageTitle}
-        about={t.aboutPageTitle}
-      />
+      <Hero t={t} />
+      <Socials t={t} />
+      <SiteNavigation t={t} />
     </header>
     <main>
       <header><h1>{t.currentPageTitle}</h1></header>
       <slot />
     </main>
     <aside>
-      <TableOfContents
-        tableOfContents={t.tableOfContentsLabel}
-        onThisPage={t.onThisPageLabel}
-      />
+      <TableOfContents t={t} />
     </aside>
   </body>
 </html>
