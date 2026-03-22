@@ -119,6 +119,9 @@ body {
   line-height: 1;
 }
 .skill-item .skill-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2rem;
   height: 2rem;
   font-size: 0.75rem;

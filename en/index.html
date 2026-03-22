@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pablo S&aacute;nchez Troncoso</title>
+    <title>Pablo Sánchez Troncoso</title>
     <meta
       name="description"
       content="Pablo Sánchez Troncoso — Computer Science student & developer portfolio."
@@ -29,6 +29,32 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+
+    <style>
+      /* ── Quick Facts card label ── */
+      .quick-facts-label {
+        letter-spacing: 0.07em;
+      }
+
+      /* ── WIP badge (extra-small) ── */
+      .badge-xs {
+        font-size: 0.6rem;
+      }
+
+      /* ── Skill icon box: smaller font variant (e.g. KNIME) ── */
+      .skill-icon-box--sm {
+        font-size: 0.7rem;
+      }
+
+      /* ── Brand-coloured skill icon boxes ── */
+      .skill-icon-openmp {
+        background: #e84142;
+      }
+
+      .skill-icon-mpi {
+        background: #0067a5;
+      }
+    </style>
   </head>
 
   <body>
@@ -80,8 +106,9 @@
               <a
                 class="nav-link btn btn-outline-secondary btn-sm px-3"
                 href="/es/"
-                ><i class="bi bi-translate me-2"></i>Espa&ntilde;ol</i
-              ></a>
+              >
+                <i class="bi bi-translate me-2"></i>Español
+              </a>
             </li>
           </ul>
         </div>
@@ -100,7 +127,7 @@
           class="avatar rounded-circle mb-4 shadow"
         />
 
-        <h1 class="display-4 fw-bold mb-1">Pablo S&aacute;nchez Troncoso</h1>
+        <h1 class="display-4 fw-bold mb-1">Pablo Sánchez Troncoso</h1>
         <p class="lead text-white-50 mb-4">
           Computer Science Student &nbsp;&middot;&nbsp; Open to Work
         </p>
@@ -262,8 +289,7 @@
             <h3 class="fw-bold mb-2">
               UPO Selenium Test Suite
               <span
-                class="badge bg-warning text-dark ms-2 align-middle"
-                style="font-size: 0.6rem"
+                class="badge bg-warning text-dark ms-2 align-middle badge-xs"
                 >WIP 🚧</span
               >
             </h3>
@@ -338,8 +364,7 @@
           <div class="col-md-5">
             <div class="bg-white rounded-3 p-4 shadow-sm">
               <h6
-                class="text-muted text-uppercase fw-semibold mb-3"
-                style="letter-spacing: 0.07em"
+                class="quick-facts-label text-muted text-uppercase fw-semibold mb-3"
               >
                 Quick Facts
               </h6>
@@ -448,8 +473,7 @@
                 problem-solving skills.
               </li>
               <li>
-                Achieved notable improvements in students&apos; academic
-                performance.
+                Achieved notable improvements in students' academic performance.
               </li>
             </ul>
           </div>
@@ -469,7 +493,7 @@
               class="d-flex flex-column flex-sm-row justify-content-between mb-1"
             >
               <h5 class="fw-semibold mb-0">
-                Bachelor&apos;s Degree in Computer Engineering
+                Bachelor's Degree in Computer Engineering
               </h5>
               <span class="text-muted small">Sep 2021 &ndash; Present</span>
             </div>
@@ -557,15 +581,14 @@
               </div>
               <div class="skill-item">
                 <span
-                  class="skill-icon-box d-flex align-items-center justify-content-center rounded-2 bg-primary text-white fw-bold"
+                  class="skill-icon-box bg-primary text-white fw-bold rounded-2"
                   >Pl</span
                 >
                 <span>Polars</span>
               </div>
               <div class="skill-item">
                 <span
-                  class="skill-icon-box d-flex align-items-center justify-content-center rounded-2 bg-secondary text-white fw-bold"
-                  style="font-size: 0.7rem"
+                  class="skill-icon-box skill-icon-box--sm bg-secondary text-white fw-bold rounded-2"
                   >KN</span
                 >
                 <span>KNIME</span>
@@ -635,16 +658,14 @@
                 <div class="skill-grid">
                   <div class="skill-item">
                     <span
-                      class="skill-icon-box d-flex align-items-center justify-content-center rounded-2 fw-bold text-white"
-                      style="background: #e84142"
+                      class="skill-icon-box skill-icon-openmp text-white fw-bold rounded-2"
                       >OMP</span
                     >
                     <span>OpenMP</span>
                   </div>
                   <div class="skill-item">
                     <span
-                      class="skill-icon-box d-flex align-items-center justify-content-center rounded-2 fw-bold text-white"
-                      style="background: #0067a5"
+                      class="skill-icon-box skill-icon-mpi text-white fw-bold rounded-2"
                       >MPI</span
                     >
                     <span>MPI</span>
@@ -685,7 +706,7 @@
     <!-- ════════════════════ CONTACT ════════════════════ -->
     <section id="contact" class="py-5 bg-dark text-white text-center">
       <div class="container py-4">
-        <h2 class="fw-bold mb-2">Let&apos;s Connect</h2>
+        <h2 class="fw-bold mb-2">Let's Connect</h2>
         <p class="text-white-50 mb-4">
           Open to Junior &amp; Intern opportunities &mdash; feel free to reach
           out.
@@ -726,14 +747,33 @@
     <!-- ════════════════════ FOOTER ════════════════════ -->
     <footer class="py-3 text-center text-white-50">
       <p class="mb-0 small">
-        &copy; 2026 Pablo S&aacute;nchez Troncoso &mdash; All rights reserved.
+        &copy; 2026 Pablo Sánchez Troncoso &mdash; All rights reserved.
       </p>
     </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Scrollspy active link highlighting
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("#mainNav .nav-link");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const link = document.querySelector(
+              `#mainNav a[href="#${entry.target.id}"]`,
+            );
+            if (link) link.classList.toggle("active", entry.isIntersecting);
+          });
+        },
+        { rootMargin: "-64px 0px -60% 0px" },
+      );
+
+      sections.forEach((s) => observer.observe(s));
+    </script>
   </body>
 </html>
