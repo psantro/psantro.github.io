@@ -1,0 +1,770 @@
+<!doctype html>
+<html
+  lang="es"
+  data-bs-spy="scroll"
+  data-bs-target="#mainNav"
+  data-bs-offset="80"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Sánchez Troncoso</title>
+    <meta
+      name="description"
+      content="Pablo Sánchez Troncoso — Estudiante de Ingeniería Informática y portafolio de desarrollador."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ════════════════════ NAVBAR ════════════════════ -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-md navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#hero">@psantro</a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinks"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav ms-auto gap-md-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Habilidades</a>
+            </li>
+            <li class="nav-item ms-md-3">
+              <a
+                class="nav-link btn btn-outline-primary btn-sm px-3"
+                href="#contact"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item ms-md-2">
+              <a
+                class="nav-link btn btn-outline-secondary btn-sm px-3"
+                href="/es/"
+              >
+                <i class="bi bi-translate me-2"></i>English
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ════════════════════ HERO ════════════════════ -->
+    <section
+      id="hero"
+      class="d-flex align-items-center justify-content-center text-center text-white"
+    >
+      <div class="py-5">
+        <img
+          src="/assets/images/profile/psantro-2764x2674.webp"
+          alt="Pablo Sánchez Troncoso"
+          class="avatar rounded-circle mb-4 shadow"
+        />
+
+        <h1 class="display-4 fw-bold mb-1">Pablo Sánchez Troncoso</h1>
+        <p class="lead text-white-50 mb-4">
+          Estudiante de Ingeniería Informática &nbsp;&middot;&nbsp; Disponible
+          para trabajar
+        </p>
+
+        <div class="d-flex justify-content-center gap-2 mb-5">
+          <a
+            href="https://github.com/psantro"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn btn btn-outline-light"
+            aria-label="GitHub"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/psantro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn btn btn-outline-light"
+            aria-label="LinkedIn"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a
+            href="/cdn-cgi/l/email-protection#aadacbc8c6c5d9cbc4ded8c5c4eacdc7cbc3c684c9c5c7"
+            class="social-btn btn btn-outline-light"
+            aria-label="Email"
+          >
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a
+            href="/assets/pdfs/resumes/psantro-resume-en.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn btn btn-outline-light"
+            aria-label="Download Resume"
+          >
+            <i class="bi bi-file-earmark-person-fill"></i>
+          </a>
+        </div>
+
+        <a href="#projects" class="btn btn-primary px-4 me-2">Ver mi trabajo</a>
+        <a href="#about" class="btn btn-outline-light px-4">Sobre mí</a>
+
+        <div class="mt-5">
+          <a href="#projects" class="text-white-50 text-decoration-none">
+            <i class="bi bi-chevron-double-down fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ PROJECTS ════════════════════ -->
+    <section id="projects" class="bg-white">
+      <div class="container col-lg-9 py-6 py-5">
+        <h2 class="section-title fw-bold mb-5">Proyectos</h2>
+
+        <!-- Project 1 -->
+        <div class="project-row row align-items-center py-5 g-4">
+          <div class="col-md-6 order-md-1">
+            <img
+              src="/assets/images/projects/cards/psantro-website-1920x1080px.webp"
+              class="project-img w-100 shadow-sm"
+              alt="Personal Website"
+            />
+          </div>
+          <div class="col-md-6 order-md-0">
+            <p class="project-number mb-0">01</p>
+            <h3 class="fw-bold mb-2">Personal Website</h3>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge rounded-pill bg-primary">HTML</span>
+              <span class="badge rounded-pill bg-primary">CSS</span>
+              <span class="badge rounded-pill bg-primary">JavaScript</span>
+              <span class="badge rounded-pill bg-primary">Bootstrap</span>
+            </div>
+            <p class="text-muted">
+              Portafolio digital creado para destacar mis habilidades de
+              desarrollo web, facilitando a posibles empleadores explorar mi
+              trabajo y ponerse en contacto. Solo frontend, desplegado en GitHub
+              Pages.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a
+                href="https://psantro.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+              >
+                Demo en vivo <i class="bi bi-box-arrow-up-right ms-1"></i>
+              </a>
+              <a
+                href="https://github.com/psantro/psantro.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                <i class="bi bi-github me-1"></i> Repositorio
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-row row align-items-center py-5 g-4">
+          <div class="col-md-6">
+            <img
+              src="/assets/images/projects/cards/superstore-dashboard-1920x1080px.webp"
+              class="project-img w-100 shadow-sm"
+              alt="Superstore Dashboard"
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="project-number mb-0">02</p>
+            <h3 class="fw-bold mb-2">Superstore Dashboard</h3>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge rounded-pill bg-primary">Python</span>
+              <span class="badge rounded-pill bg-primary">Pandas</span>
+              <span class="badge rounded-pill bg-primary">statsmodels</span>
+              <span class="badge rounded-pill bg-primary">Streamlit</span>
+              <span class="badge rounded-pill bg-primary">Data Science</span>
+            </div>
+            <p class="text-muted">
+              Desarrollado para un curso de Business Intelligence — un dashboard
+              ejecutivo interactivo para una tienda ficticia, con predicción de
+              series temporales de ventas basada en ARIMA, desplegado en
+              Streamlit Community Cloud.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a
+                href="https://in-superstore.streamlit.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+              >
+                Demo en vivo <i class="bi bi-box-arrow-up-right ms-1"></i>
+              </a>
+              <a
+                href="https://github.com/psantro/in-superstore"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                <i class="bi bi-github me-1"></i> Repositorio
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-row row align-items-center py-5 g-4">
+          <div class="col-md-6 order-md-1">
+            <img
+              src="/assets/images/projects/cards/upo-selenium-test-suite-1920x1080px.webp"
+              class="project-img w-100 shadow-sm"
+              alt="UPO Selenium Test Suite"
+            />
+          </div>
+          <div class="col-md-6 order-md-0">
+            <p class="project-number mb-0">03</p>
+            <h3 class="fw-bold mb-2">
+              UPO Selenium Test Suite
+              <span
+                class="badge bg-warning text-dark ms-2 align-middle badge-xs"
+                >WIP 🚧</span
+              >
+            </h3>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge rounded-pill bg-primary">Java</span>
+              <span class="badge rounded-pill bg-primary">Maven</span>
+              <span class="badge rounded-pill bg-primary">Selenium</span>
+              <span class="badge rounded-pill bg-primary">JUnit</span>
+            </div>
+            <p class="text-muted">
+              Suite de pruebas de regresión de UI automatizada para el sitio web
+              de la Escuela Politécnica Superior de la Universidad Pablo de
+              Olavide (Sevilla), que garantiza funcionalidad y calidad.
+              Inspirado en una práctica de QA; implementación independiente.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a
+                href="https://github.com/psantro/web-ui-regression-tests"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                <i class="bi bi-github me-1"></i> Repositorio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ ABOUT ════════════════════ -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container col-lg-9 py-4">
+        <h2 class="section-title fw-bold mb-5">Sobre mí</h2>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-md-7">
+            <p class="fs-5 text-muted lh-lg">
+              Soy estudiante de último año de
+              <strong class="text-dark">Ingeniería Informática</strong> en la
+              <a
+                href="https://www.upo.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Universidad Pablo de Olavide</a
+              >, España,
+              <strong class="text-dark"
+                >actualmente en búsqueda de una posición Junior o de
+                prácticas</strong
+              >. Hablante nativo de <strong>español</strong> con
+              <strong>inglés C1</strong>
+              (Cambridge First Certificate, Nota A), disfruto los retos que
+              amplían mis habilidades y conocimientos.
+            </p>
+            <p class="text-muted lh-lg">
+              Mi expediente académico incluye
+              <strong>cinco matrículas de honor</strong> en asignaturas
+              avanzadas como <strong>Minería de Datos</strong>,
+              <strong>Bioinformática</strong> e
+              <strong>Inteligencia de Negocio</strong>. Fuera del aula,
+              participo activamente en hackathones y fui miembro del equipo
+              <strong>Codevergence</strong> en los
+              <strong>Ogathon 2.0, 3.0 y 4.0</strong>, afrontando retos de IA,
+              Investigación Operativa, Ciberseguridad e Ingeniería del Software.
+            </p>
+            <p class="text-muted lh-lg">
+              Mis principales intereses son la
+              <strong>Ciencia de Datos</strong>, el
+              <strong>Aprendizaje Automático</strong> y los
+              <strong>Sistemas Distribuidos</strong>. Siempre busco
+              oportunidades para aplicar estos intereses en proyectos reales.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="bg-white rounded-3 p-4 shadow-sm">
+              <h6
+                class="quick-facts-label text-muted text-uppercase fw-semibold mb-3"
+              >
+                Datos rápidos
+              </h6>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3 d-flex align-items-center gap-3">
+                  <i
+                    class="bi bi-geo-alt-fill text-primary fs-5 flex-shrink-0"
+                  ></i>
+                  <span>Sevilla, España</span>
+                </li>
+                <li class="mb-3 d-flex align-items-center gap-3">
+                  <i
+                    class="bi bi-mortarboard-fill text-primary fs-5 flex-shrink-0"
+                  ></i>
+                  <span
+                    >Grado en Ingeniería Informática, Sistemas de
+                    Información</span
+                  >
+                </li>
+                <li class="mb-3 d-flex align-items-center gap-3">
+                  <i
+                    class="bi bi-translate text-primary fs-5 flex-shrink-0"
+                  ></i>
+                  <span>Español (nativo) &middot; Inglés C1 (Cambridge)</span>
+                </li>
+                <li class="mb-3 d-flex align-items-center gap-3">
+                  <i
+                    class="bi bi-trophy-fill text-primary fs-5 flex-shrink-0"
+                  ></i>
+                  <span
+                    >5&times; Matrículas de honor en asignaturas avanzadas</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-search text-primary fs-5 flex-shrink-0"></i>
+                  <span
+                    >Disponible para puestos Junior / Prácticas en Ciencia de
+                    Datos &amp; Ingeniería del Software</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ EXPERIENCE ════════════════════ -->
+    <section id="experience" class="py-5 bg-white">
+      <div class="container col-lg-9 py-4">
+        <h2 class="section-title fw-bold mb-5">Experiencia</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between mb-1"
+            >
+              <h5 class="fw-semibold mb-0">
+                Colaborador de Investigación y Docencia
+              </h5>
+              <span class="text-muted small">Dic 2023 &ndash; May 2024</span>
+            </div>
+            <p class="text-primary mb-2 small">
+              Laboratorio de Big Data &amp; Ciencia de Datos &mdash;
+              <a
+                href="https://www.upo.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Universidad Pablo de Olavide</a
+              >, España
+            </p>
+            <ul class="text-muted mb-0">
+              <li>
+                Apoyo en actividades docentes e investigadoras del departamento
+                de Ingeniería Informática.
+              </li>
+              <li>
+                Soporte en proyectos académicos y prácticos basados en datos.
+              </li>
+              <li>
+                Aplicación de modelos de aprendizaje automático a problemas de
+                predicción reales.
+              </li>
+              <li>
+                Trabajo con la metodología <strong>CRISP-DM</strong> a lo largo
+                del ciclo de vida completo de ciencia de datos, incluyendo
+                preprocesamiento, selección de modelos, evaluación y validación.
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between mb-1"
+            >
+              <h5 class="fw-semibold mb-0">Tutor Particular</h5>
+              <span class="text-muted small">Oct 2021 &ndash; May 2022</span>
+            </div>
+            <p class="text-primary mb-2 small">Autónomo</p>
+            <ul class="text-muted mb-0">
+              <li>
+                Clases individuales de programación a estudiantes de nivel
+                inicial e intermedio.
+              </li>
+              <li>
+                Enseñanza de conceptos fundamentales: estructuras de control,
+                POO y buenas prácticas de programación.
+              </li>
+              <li>
+                Diseño de ejercicios prácticos para reforzar la resolución
+                computacional de problemas.
+              </li>
+              <li>
+                Mejoras notables en el rendimiento académico de los alumnos.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ EDUCATION ════════════════════ -->
+    <section id="education" class="py-5 bg-light">
+      <div class="container col-lg-9 py-4">
+        <h2 class="section-title fw-bold mb-5">Educación</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between mb-1"
+            >
+              <h5 class="fw-semibold mb-0">Grado en Ingeniería Informática</h5>
+              <span class="text-muted small">Sep 2021 &ndash; Actualidad</span>
+            </div>
+            <p class="text-primary mb-2 small">
+              <a
+                href="https://www.upo.es/escuela-politecnica-superior/es/oferta-academica/grados/grado-en-ingenieria-informatica-en-sistemas-de-informacion/portada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Universidad Pablo de Olavide</a
+              >, España
+            </p>
+            <p class="text-muted mb-0">
+              Especialidad en Sistemas de Información &middot; 5&times;
+              matrículas de honor en asignaturas avanzadas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ SKILLS ════════════════════ -->
+    <section id="skills" class="py-5 bg-white">
+      <div class="container col-lg-9 py-4">
+        <h2 class="section-title fw-bold mb-5">Habilidades</h2>
+
+        <div class="d-flex flex-column gap-4">
+          <!-- Programming Languages -->
+          <div class="skill-group">
+            <p class="skill-group-label text-muted mb-3">
+              Lenguajes de Programación
+            </p>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <i class="devicon-python-plain colored"></i><span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-java-plain colored"></i><span>Java</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-c-plain colored"></i><span>C</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-csharp-plain colored"></i><span>C#</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-javascript-plain colored"></i
+                ><span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-php-plain colored"></i><span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-bash-plain"></i><span>Bash</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-arduino-plain colored"></i
+                ><span>Arduino</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science & ML -->
+          <div class="skill-group">
+            <p class="skill-group-label text-muted mb-3">
+              Ciencia de Datos &amp; Aprendizaje Automático
+            </p>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <i class="devicon-pandas-plain colored"></i><span>Pandas</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-numpy-plain colored"></i><span>NumPy</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-scikitlearn-plain colored"></i
+                ><span>scikit-learn</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-tensorflow-original colored"></i
+                ><span>TensorFlow</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-streamlit-plain colored"></i
+                ><span>Streamlit</span>
+              </div>
+              <div class="skill-item">
+                <span
+                  class="skill-icon-box bg-primary text-white fw-bold rounded-2"
+                  >Pl</span
+                >
+                <span>Polars</span>
+              </div>
+              <div class="skill-item">
+                <span
+                  class="skill-icon-box skill-icon-box--sm bg-secondary text-white fw-bold rounded-2"
+                  >KN</span
+                >
+                <span>KNIME</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Frameworks -->
+          <div class="skill-group">
+            <p class="skill-group-label text-muted mb-3">
+              Herramientas &amp; Frameworks
+            </p>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <i class="devicon-git-plain colored"></i><span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-docker-plain colored"></i><span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-podman-plain colored"></i><span>Podman</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-django-plain colored"></i><span>Django</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-laravel-plain colored"></i
+                ><span>Laravel</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-nodejs-plain colored"></i><span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-bootstrap-plain colored"></i
+                ><span>Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-unity-plain"></i><span>Unity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-group">
+            <p class="skill-group-label text-muted mb-3">Bases de Datos</p>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <i class="devicon-postgresql-plain colored"></i
+                ><span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-mysql-plain colored"></i><span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-sqlite-plain colored"></i><span>SQLite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parallelization & HPC + Additional -->
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="skill-group h-100">
+                <p class="skill-group-label text-muted mb-3">
+                  Paralelización &amp; HPC
+                </p>
+                <div class="skill-grid">
+                  <div class="skill-item">
+                    <span
+                      class="skill-icon-box skill-icon-openmp text-white fw-bold rounded-2"
+                      >OMP</span
+                    >
+                    <span>OpenMP</span>
+                  </div>
+                  <div class="skill-item">
+                    <span
+                      class="skill-icon-box skill-icon-mpi text-white fw-bold rounded-2"
+                      >MPI</span
+                    >
+                    <span>MPI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-group h-100">
+                <p class="skill-group-label text-muted mb-3">
+                  Competencias Adicionales
+                </p>
+                <ul class="list-unstyled mb-0 text-muted small lh-lg">
+                  <li>
+                    <i class="bi bi-check2 text-primary me-1"></i>Arquitectura
+                    de Software
+                  </li>
+                  <li>
+                    <i class="bi bi-check2 text-primary me-1"></i>Análisis,
+                    Diseño &amp; Planificación de Proyectos
+                  </li>
+                  <li>
+                    <i class="bi bi-check2 text-primary me-1"></i>Sistemas
+                    Distribuidos &amp; Embebidos
+                  </li>
+                  <li>
+                    <i class="bi bi-check2 text-primary me-1"></i>Más de 10
+                    proyectos en grupo durante el grado
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ CONTACT ════════════════════ -->
+    <section id="contact" class="py-5 bg-dark text-white text-center">
+      <div class="container py-4">
+        <h2 class="fw-bold mb-2">Conectemos</h2>
+        <p class="text-white-50 mb-4">
+          Disponible para oportunidades Junior &amp; Prácticas &mdash; no dudes
+          en escribirme.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a
+            href="/cdn-cgi/l/email-protection#1a6a7b787675697b746e6875745a7d777b737634797577"
+            class="btn btn-primary px-4"
+          >
+            <i class="bi bi-envelope-fill me-2"></i>Escríbeme
+          </a>
+          <a
+            href="https://www.linkedin.com/in/psantro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light px-4"
+          >
+            <i class="bi bi-linkedin me-2"></i>LinkedIn
+          </a>
+          <a
+            href="https://github.com/psantro"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light px-4"
+          >
+            <i class="bi bi-github me-2"></i>GitHub
+          </a>
+          <a
+            href="/assets/pdfs/resumes/psantro-resume-en.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light px-4"
+          >
+            <i class="bi bi-file-earmark-person-fill me-2"></i>Descargar CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ FOOTER ════════════════════ -->
+    <footer class="py-3 text-center text-white-50">
+      <p class="mb-0 small">
+        &copy; 2026 Pablo Sánchez Troncoso &mdash; Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Scrollspy active link highlighting
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("#mainNav .nav-link");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const link = document.querySelector(
+              `#mainNav a[href="#${entry.target.id}"]`,
+            );
+            if (link) link.classList.toggle("active", entry.isIntersecting);
+          });
+        },
+        { rootMargin: "-64px 0px -60% 0px" },
+      );
+
+      sections.forEach((s) => observer.observe(s));
+    </script>
+  </body>
+</html>
