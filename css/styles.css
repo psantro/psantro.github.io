@@ -147,3 +147,27 @@ body {
 footer {
   background: #111;
 }
+
+/* ── Quick Facts card label ── */
+.quick-facts-label {
+  letter-spacing: 0.07em;
+}
+
+/* ── WIP badge (extra-small) ── */
+.badge-xs {
+  font-size: 0.6rem;
+}
+
+/* ── Skill icon box: smaller font variant (e.g. KNIME) ── */
+.skill-icon-box--sm {
+  font-size: 0.7rem;
+}
+
+/* ── Brand-coloured skill icon boxes ── */
+.skill-icon-openmp {
+  background: #e84142;
+}
+
+.skill-icon-mpi {
+  background: #0067a5;
+}
