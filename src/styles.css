@@ -171,3 +171,12 @@ footer {
 .skill-icon-mpi {
   background: #0067a5;
 }
+
+.language-landing {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
