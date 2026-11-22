@@ -37,6 +37,18 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "subPath": "en"
+        },
+        "locales": {
+          "es": {
+            "translation": "src/locale/messages.es.xlf",
+            "subPath": "es"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -47,22 +59,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "**/*",
-                "input": "assets",
-                "output": "assets"
               }
             ],
-            "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
-              "node_modules/devicon/devicon.min.css",
-              "src/styles.css"
-            ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
+            "styles": ["src/styles.css"],
             "server": "src/main.server.ts",
             "outputMode": "static",
             "security": {
@@ -71,6 +70,8 @@
           },
           "configurations": {
             "production": {
+              "localize": true,
+              "i18nMissingTranslation": "error",
               "budgets": [
                 {
                   "type": "initial",
@@ -79,8 +80,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "18kB",
+                  "maximumError": "20kB"
                 }
               ],
               "outputHashing": "all"
@@ -88,7 +89,8 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "localize": false
             }
           },
           "defaultConfiguration": "production"

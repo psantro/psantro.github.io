@@ -1,0 +1,16 @@
+{
+  "name": "Pablo Sánchez Troncoso — Portfolio",
+  "short_name": "psantro",
+  "description": "Portfolio of Pablo Sánchez Troncoso, Computer Science student and software developer.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffcf2",
+  "theme_color": "#252422",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

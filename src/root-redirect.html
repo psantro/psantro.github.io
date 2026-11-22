@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#252422" />
+    <title>psantro — Choose your language</title>
+    <link rel="icon" href="/en/favicon.ico" type="image/x-icon" />
+    <script>
+      const preferredLanguage =
+        navigator.languages?.[0] || navigator.language || "en";
+      const destination = /^es(?:-|$)/i.test(preferredLanguage)
+        ? "/es/"
+        : "/en/";
+      window.location.replace(destination);
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Pablo Sánchez Troncoso</h1>
+      <p>Choose your language / Elige tu idioma</p>
+      <nav aria-label="Language selection">
+        <a href="/en/">English</a>
+        <a href="/es/" lang="es">Español</a>
+      </nav>
+    </main>
+  </body>
+</html>
